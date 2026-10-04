@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Train With Siphelo Dandala</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#home">
+      <span class="brand-mark">SD</span>
+      <span>TRAIN WITH <strong>SIPHELO DANDALA</strong></span>
+    </a>
+    <nav>
+      <a href="#how">How It Works</a>
+      <a href="#plans">Pricing</a>
+      <a href="#results">Results</a>
+      <a href="#faq">FAQ</a>
+      <button class="btn btn-outline" onclick="openLogin()">Login</button>
+      <button class="btn btn-primary" onclick="openLogin()">Join Free</button>
+    </nav>
+    <button class="menu" onclick="document.body.classList.toggle('menu-open')">☰</button>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <img class="hero-image" src="assets/hero.jpeg" alt="Siphelo Dandala personal trainer"/>
+      <div class="hero-copy">
+        <div class="eyebrow">PERSONALISED ONLINE FITNESS COACHING</div>
+        <h1>Transform your body.<br><span>Build your discipline.</span></h1>
+        <p>Goal-based workouts, accountability, community support and direct coaching from Siphelo Dandala — all in one simple fitness membership.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary btn-lg" onclick="openLogin()">Join Free</button>
+          <a class="btn btn-light btn-lg" href="#plans">View Plans</a>
+        </div>
+        <div class="mini-proof">
+          <span>✓ Goal-based plans</span>
+          <span>✓ Community support</span>
+          <span>✓ Monthly membership</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section">
+      <div class="section-head">
+        <div class="eyebrow green">SIMPLE. PERSONAL. EFFECTIVE.</div>
+        <h2>Your fitness journey in 4 easy steps</h2>
+        <p>No complicated setup. Choose your goal and get a plan built around you.</p>
+      </div>
+      <div class="steps">
+        <div class="step-card"><span>01</span><h3>Join Free</h3><p>Create your account with Google or email.</p></div>
+        <div class="step-card"><span>02</span><h3>Choose Your Goal</h3><p>Lose weight, build muscle, keep fit or cut.</p></div>
+        <div class="step-card"><span>03</span><h3>Select Your Plan</h3><p>Choose the monthly membership that suits you.</p></div>
+        <div class="step-card"><span>04</span><h3>Start Training</h3><p>Unlock your dashboard, workouts and community.</p></div>
+      </div>
+    </section>
+
+    <section class="coach section">
+      <div class="coach-photo">
+        <img src="assets/coach.jpeg" alt="Coach Siphelo Dandala"/>
+      </div>
+      <div class="coach-copy">
+        <div class="eyebrow green">MEET YOUR COACH</div>
+        <h2>Train smarter with Siphelo Dandala</h2>
+        <p>Siphelo's coaching approach is built around consistency, discipline and real progress. Every member joins a goal-based training experience with structured workouts, progress tracking and community accountability.</p>
+        <div class="ticks">
+          <div>✓ Personalised goal-based training</div>
+          <div>✓ Weekly progress tracking</div>
+          <div>✓ Direct coach guidance</div>
+          <div>✓ Motivating fitness community</div>
+        </div>
+        <button class="btn btn-primary btn-lg" onclick="openLogin()">Get Started</button>
+      </div>
+    </section>
+
+    <section id="results" class="section results">
+      <div class="section-head">
+        <div class="eyebrow green">REAL JOURNEY. REAL DISCIPLINE.</div>
+        <h2>Progress is built one workout at a time</h2>
+        <p>Use Siphelo's own transformation and training journey to inspire members to stay consistent.</p>
+      </div>
+      <div class="gallery">
+        <img src="assets/progress_a.jpeg" alt="Fitness progress"/>
+        <img src="assets/progress_b.jpeg" alt="Fitness transformation"/>
+        <img src="assets/gallery_a.jpeg" alt="Siphelo fitness photo"/>
+        <img src="assets/gallery_b.jpeg" alt="Siphelo fitness photo"/>
+      </div>
+    </section>
+
+    <section id="plans" class="section pricing">
+      <div class="section-head">
+        <div class="eyebrow green">MEMBERSHIP OPTIONS</div>
+        <h2>Choose a plan and start your journey</h2>
+        <p>Your recommended plan will be highlighted after you choose your fitness goal.</p>
+      </div>
+      <div class="price-grid">
+        <div class="price-card">
+          <div class="price-label">ESSENTIAL</div>
+          <div class="price"><span>R</span>99<small>/month</small></div>
+          <p>Perfect for members focused on weight loss, cutting and consistent fitness.</p>
+          <ul>
+            <li>Goal-based workouts</li>
+            <li>Member dashboard</li>
+            <li>Progress tracking</li>
+            <li>Goal community access</li>
+            <li>Coach motivation & tips</li>
+          </ul>
+          <button class="btn btn-dark full" onclick="startFlow('R99')">Choose R99</button>
+        </div>
+        <div class="price-card featured">
+          <div class="recommended">MOST POPULAR</div>
+          <div class="price-label">PREMIUM</div>
+          <div class="price"><span>R</span>150<small>/month</small></div>
+          <p>For members wanting a more complete coaching experience and stronger accountability.</p>
+          <ul>
+            <li>Everything in Essential</li>
+            <li>Enhanced coach support</li>
+            <li>Priority session access</li>
+            <li>Advanced progress insights</li>
+            <li>Premium member experience</li>
+          </ul>
+          <button class="btn btn-primary full" onclick="startFlow('R150')">Choose R150</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="app-preview section">
+      <div class="preview-copy">
+        <div class="eyebrow green">YOUR TRAINING HUB</div>
+        <h2>Everything you need, in one dashboard</h2>
+        <p>After subscribing, members go straight into a personalised fitness dashboard with today's workout, weekly progress, calories, sessions and goal-based community.</p>
+        <button class="btn btn-primary btn-lg" onclick="openDemoDashboard()">Preview Dashboard</button>
+      </div>
+      <div class="dashboard-mock">
+        <div class="mock-top"><div><small>WELCOME BACK</small><h3>Let's keep moving 👋</h3></div><div class="avatar">SD</div></div>
+        <div class="goal-pill">Goal: Build Muscle</div>
+        <div class="stats">
+          <div><strong>4/5</strong><span>Workouts</span></div>
+          <div><strong>1,840</strong><span>Calories</span></div>
+          <div><strong>6 days</strong><span>Streak</span></div>
+        </div>
+        <div class="workout-box"><small>TODAY'S WORKOUT</small><h4>Upper Body Strength</h4><p>6 exercises • 45 min</p><button>Start Workout →</button></div>
+      </div>
+    </section>
+
+    <section class="community section">
+      <div class="community-card">
+        <div>
+          <div class="eyebrow">TRAIN TOGETHER</div>
+          <h2>Your goal. Your community. Your coach.</h2>
+          <p>Members automatically join a group based on their chosen goal, where they can chat, stay accountable and receive motivation directly from Coach Siphelo.</p>
+        </div>
+        <div class="chat">
+          <div class="bubble coach-msg"><b>Coach Siphelo ✓</b><p>Morning team 💪 Today's workout is live. Stay hydrated and finish strong!</p></div>
+          <div class="bubble member-msg"><b>Lwazi</b><p>Workout done! 🔥</p></div>
+          <div class="bubble member-msg"><b>Amanda</b><p>Let's go team 🙌</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq">
+      <div class="section-head">
+        <div class="eyebrow green">FAQ</div>
+        <h2>Questions before you start?</h2>
+      </div>
+      <details><summary>Can I join before paying?</summary><p>Yes. You first create your account and choose your goal. Payment only happens when you select a membership plan.</p></details>
+      <details><summary>Is this a once-off payment?</summary><p>No. The membership is a recurring monthly subscription that continues until cancelled.</p></details>
+      <details><summary>Will my workouts match my goal?</summary><p>Yes. Your chosen goal personalises the workouts and community you see in the app.</p></details>
+      <details><summary>Can Siphelo communicate with members?</summary><p>Yes. Coach Siphelo can post tips, messages, workouts and motivation inside each goal community.</p></details>
+    </section>
+
+    <section class="cta">
+      <img src="assets/gallery_c.jpeg" alt="Siphelo Dandala"/>
+      <div class="cta-overlay"></div>
+      <div class="cta-copy">
+        <div class="eyebrow">READY TO START?</div>
+        <h2>Become the strongest version of yourself.</h2>
+        <p>Join Train With Siphelo Dandala and start a fitness journey built around your goal.</p>
+        <button class="btn btn-primary btn-lg" onclick="openLogin()">Join Free Today</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand"><span class="brand-mark">SD</span><span>TRAIN WITH <strong>SIPHELO DANDALA</strong></span></div>
+    <p>Personal training • Goal-based workouts • Fitness community</p>
+    <small>Demo concept for client presentation.</small>
+  </footer>
+
+  <!-- App flow modal -->
+  <div class="modal" id="appModal">
+    <div class="modal-box">
+      <button class="close" onclick="closeModal()">×</button>
+
+      <section class="flow-screen active" id="loginScreen">
+        <div class="flow-logo">SD</div>
+        <h2>Welcome to Train With Siphelo</h2>
+        <p class="muted">Create your account and start your fitness journey.</p>
+        <button class="social-btn" onclick="showGoals()">G&nbsp;&nbsp; Continue with Google</button>
+        <div class="or"><span></span>OR<span></span></div>
+        <input type="email" placeholder="Email address"/>
+        <input type="password" placeholder="Password"/>
+        <button class="btn btn-primary full" onclick="showGoals()">Continue</button>
+        <p class="small">Demo: any email/password will continue.</p>
+      </section>
+
+      <section class="flow-screen" id="goalScreen">
+        <div class="progress-line"><span style="width:33%"></span></div>
+        <div class="eyebrow green">STEP 1 OF 3</div>
+        <h2>What's your goal?</h2>
+        <p class="muted">Choose one goal so we can personalise your training experience.</p>
+        <div class="goal-grid">
+          <button class="goal-card" onclick="selectGoal('Lose Weight', this)">🏃<b>Lose Weight</b><small>Burn fat & improve fitness</small></button>
+          <button class="goal-card" onclick="selectGoal('Build Muscle', this)">💪<b>Build Muscle</b><small>Build strength & muscle</small></button>
+          <button class="goal-card" onclick="selectGoal('Keep Fit', this)">❤️<b>Keep Fit</b><small>Stay healthy & consistent</small></button>
+          <button class="goal-card" onclick="selectGoal('Cutting', this)">🔥<b>Cutting</b><small>Reduce fat, keep muscle</small></button>
+        </div>
+        <button id="goalContinue" class="btn btn-primary full disabled" onclick="showFlowPricing()" disabled>Continue</button>
+      </section>
+
+      <section class="flow-screen" id="flowPricing">
+        <div class="progress-line"><span style="width:66%"></span></div>
+        <div class="eyebrow green">STEP 2 OF 3</div>
+        <h2>Choose your membership</h2>
+        <p class="muted">Based on your goal, we recommend <b id="recommendedPlan">R150/month</b>.</p>
+        <div class="mini-prices">
+          <button class="mini-price" id="p99" onclick="choosePlan('R99', this)"><span>Essential</span><b>R99<small>/month</small></b><em>Workouts + community</em></button>
+          <button class="mini-price" id="p150" onclick="choosePlan('R150', this)"><span>Premium</span><b>R150<small>/month</small></b><em>Complete coaching experience</em></button>
+        </div>
+        <button class="btn btn-primary full" onclick="showPayment()">Continue to Payment</button>
+      </section>
+
+      <section class="flow-screen" id="paymentScreen">
+        <div class="progress-line"><span style="width:100%"></span></div>
+        <div class="eyebrow green">STEP 3 OF 3</div>
+        <h2>Start your membership</h2>
+        <div class="checkout-summary">
+          <span>Monthly membership</span><strong id="checkoutPrice">R150/month</strong>
+        </div>
+        <label>Cardholder name</label><input placeholder="Siphelo Member"/>
+        <label>Card number</label><input placeholder="4242 4242 4242 4242"/>
+        <div class="row"><input placeholder="MM/YY"/><input placeholder="CVC"/></div>
+        <p class="small">Demo checkout only — no real payment will be processed.</p>
+        <button class="btn btn-primary full" onclick="showDashboard()">Subscribe & Get Access</button>
+      </section>
+
+      <section class="flow-screen dashboard-screen" id="dashboardScreen">
+        <div class="dash-header">
+          <div><small>TRAIN WITH SIPHELO</small><h2>Welcome back 👋</h2></div>
+          <div class="avatar">SD</div>
+        </div>
+        <div class="goal-pill" id="dashGoal">Goal: Build Muscle</div>
+        <div class="dash-grid">
+          <div class="dash-card workout-card"><small>TODAY'S WORKOUT</small><h3 id="todayWorkout">Upper Body Strength</h3><p>6 exercises • 45 min</p><button class="btn btn-dark">Start Workout</button></div>
+          <div class="dash-card"><small>WEEKLY PROGRESS</small><h3>4 / 5</h3><p>Workouts completed</p><div class="bar"><span style="width:80%"></span></div></div>
+          <div class="dash-card"><small>CALORIES</small><h3>1,840 kcal</h3><p>Burned this week</p></div>
+          <div class="dash-card"><small>UPCOMING SESSION</small><h3>Tuesday • 18:00</h3><p>Coach Siphelo</p></div>
+        </div>
+        <div class="dash-card community-mini"><small>YOUR COMMUNITY</small><h3 id="communityName">Build Muscle Community</h3><p><b>Coach Siphelo:</b> Stay consistent this week. Your new plan is ready 💪</p></div>
+        <button class="btn btn-primary full" onclick="closeModal()">Back to Website</button>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
